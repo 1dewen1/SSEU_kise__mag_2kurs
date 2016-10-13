@@ -1,0 +1,5 @@
+D:\repos_Menshicov\ReadAndSum\ReadAndSum\obj\Debug\ResolveAssemblyReference.cache
+D:\repos_Menshicov\ReadAndSum\ReadAndSum\bin\Debug\ReadAndSum.exe
+D:\repos_Menshicov\ReadAndSum\ReadAndSum\bin\Debug\ReadAndSum.pdb
+D:\repos_Menshicov\ReadAndSum\ReadAndSum\obj\Debug\ReadAndSum.exe
+D:\repos_Menshicov\ReadAndSum\ReadAndSum\obj\Debug\ReadAndSum.pdb
