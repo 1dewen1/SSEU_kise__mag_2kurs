@@ -15,17 +15,7 @@ namespace vybor
                 if (int.TryParse(Console.ReadLine(), out B))
                 {
                     // максимальное значение 
-                    int Max;
-                    // если больше a
-                    if (A >= B)
-                    {
-                        Max = A;
-                    }
-                    // иначе - больше b
-                    else
-                    {
-                        Max = B;
-                    };
+                    int Max = (A >= B) ? A : B; 
                     // вывод результата
                     Console.WriteLine("ћаксимальное = " + Max);
                     Console.ReadKey();
