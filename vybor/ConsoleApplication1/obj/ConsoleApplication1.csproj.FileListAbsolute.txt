@@ -3,3 +3,8 @@ D:\repos_Menshicov\vybor\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
 D:\repos_Menshicov\vybor\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 D:\repos_Menshicov\vybor\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 D:\repos_Menshicov\vybor\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\меньщиков\repos_Menshicov\vybor\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\меньщиков\repos_Menshicov\vybor\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\меньщиков\repos_Menshicov\vybor\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\меньщиков\repos_Menshicov\vybor\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\меньщиков\repos_Menshicov\vybor\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache

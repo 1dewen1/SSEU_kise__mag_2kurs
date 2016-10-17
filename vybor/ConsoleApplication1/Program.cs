@@ -10,24 +10,36 @@ namespace vybor
         {
             //ввод исходных значений
             int A, B;
-            int.TryParse(Console.ReadLine(), out A);
-            int.TryParse(Console.ReadLine(), out B);
-            // максимальное значение 
-            int Max;
-            // если больше a
-            if (A >= B)
+            if (int.TryParse(Console.ReadLine(), out A))
             {
-                Max = A;
-            }
-            // иначе - больше b
-            else
+                if (int.TryParse(Console.ReadLine(), out B))
+                {
+                    // максимальное значение 
+                    int Max;
+                    // если больше a
+                    if (A >= B)
+                    {
+                        Max = A;
+                    }
+                    // иначе - больше b
+                    else
+                    {
+                        Max = B;
+                    };
+                    // вывод результата
+                    Console.WriteLine("Максимальное = " + Max);
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.WriteLine("Неверное значение!Нужно ввести целое число.");
+                    Console.ReadKey();
+                };
             {
-                Max = B;
+                Console.WriteLine("Неверное значение! Нужно ввести целое число.");
+                Console.ReadKey();
             };
-            // вывод результата
-            Console.WriteLine("Максимальное = " + Max);
-            // завершение программы
-            Console.ReadKey();
+            }
         }
     }
 }
