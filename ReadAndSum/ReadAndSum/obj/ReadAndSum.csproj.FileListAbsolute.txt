@@ -3,3 +3,5 @@ D:\repos_Menshicov\ReadAndSum\ReadAndSum\bin\Debug\ReadAndSum.exe
 D:\repos_Menshicov\ReadAndSum\ReadAndSum\bin\Debug\ReadAndSum.pdb
 D:\repos_Menshicov\ReadAndSum\ReadAndSum\obj\Debug\ReadAndSum.exe
 D:\repos_Menshicov\ReadAndSum\ReadAndSum\obj\Debug\ReadAndSum.pdb
+E:\меньщиков\repos_Menshicov\ReadAndSum\ReadAndSum\obj\Debug\ReadAndSum.exe
+E:\меньщиков\repos_Menshicov\ReadAndSum\ReadAndSum\obj\Debug\ReadAndSum.pdb

@@ -9,37 +9,57 @@ namespace vybor
         static void Main(string[] args)
         {
             //ввод исходных значений
-            int A, B;
-            if (int.TryParse(Console.ReadLine(), out A))
+            int A, B, C;
+            if (int.TryParse(Console.ReadLine(), out A) && int.TryParse(Console.ReadLine(), out B)
+                && int.TryParse(Console.ReadLine(), out C))
             {
-                if (int.TryParse(Console.ReadLine(), out B))
+                // максимальное значение
+                int Max;
+                //если A=>B
+                if (A >= B)
                 {
-                    // максимальное значение 
-                    int Max;
-                    // если больше a
-                    if (A >= B)
+                    //и если максимальное - A
+                    if (A >= C)
                     {
+                        // то максимальное - A
                         Max = A;
                     }
-                    // иначе - больше b
                     else
                     {
-                        Max = B;
-                    };
-                    // вывод результата
-                    Console.WriteLine("Максимальное = " + Max);
-                    Console.ReadKey();
+                        Max = C;
+                    }
                 }
+                // иначе - больше B
                 else
                 {
-                    Console.WriteLine("Неверное значение!Нужно ввести целое число.");
-                    Console.ReadKey();
+                    // и если B >= C
+                    if (B >= C)
+                    {
+                        // то максимальное - B
+                        Max = B;
+                    }
+                    // иначе - C > B
+                    else
+                    {
+                        // максимальное - C
+                        Max = C;
+                    }
                 };
+
+                // вывод результата
+                Console.WriteLine("Максимальное = " + Max);
+                Console.ReadKey();
+
+            }
+
+            else
             {
-                Console.WriteLine("Неверное значение! Нужно ввести целое число.");
+                Console.WriteLine("Неверное значение!Нужно ввести целое число.");
                 Console.ReadKey();
             };
-            }
+
         }
     }
 }
+
+
