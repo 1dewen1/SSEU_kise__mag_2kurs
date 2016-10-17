@@ -1,0 +1,5 @@
+E:\меньщиков\repos_Menshicov\mesyac\mesyac\obj\Debug\ResolveAssemblyReference.cache
+E:\меньщиков\repos_Menshicov\mesyac\mesyac\bin\Debug\mesyac.exe
+E:\меньщиков\repos_Menshicov\mesyac\mesyac\bin\Debug\mesyac.pdb
+E:\меньщиков\repos_Menshicov\mesyac\mesyac\obj\Debug\mesyac.exe
+E:\меньщиков\repos_Menshicov\mesyac\mesyac\obj\Debug\mesyac.pdb
