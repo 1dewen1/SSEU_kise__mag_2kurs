@@ -1,0 +1,5 @@
+G:\меньщиков\SSEU_kise__mag_2kurs\CinF\CinF\obj\Debug\ResolveAssemblyReference.cache
+G:\меньщиков\SSEU_kise__mag_2kurs\CinF\CinF\bin\Debug\CinF.exe
+G:\меньщиков\SSEU_kise__mag_2kurs\CinF\CinF\bin\Debug\CinF.pdb
+G:\меньщиков\SSEU_kise__mag_2kurs\CinF\CinF\obj\Debug\CinF.exe
+G:\меньщиков\SSEU_kise__mag_2kurs\CinF\CinF\obj\Debug\CinF.pdb
