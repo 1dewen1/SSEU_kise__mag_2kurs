@@ -13,51 +13,47 @@ namespace ConsoleCalc
             double result = 0; // результат вычислени€
             string operation; // действие
 
-            if (double.TryParse(Console.ReadLine(), out operand1) && double.TryParse(Console.ReadLine(), out operand2))
+            if (double.TryParse(Console.ReadLine(), out operand1)) 
             {
                 // выбираем операцию
             operation = Console.ReadLine();
             switch (operation)
             {
+                // операции с двум€ операндами
                 case "+":
-                    if (double.TryParse(Console.ReadLine(), out operand2))
-                    {
-                        result = operand1 + operand2;
-                    };
-                    break;
-                case "-": 
-                    if (double.TryParse(Console.ReadLine(), out operand2))
-                    {
-                        result = operand1 - operand2;
-                    };
-                    break;
+                case "-":
                 case "*": 
+                case "/":
+                   // считываем второй операнд 
                     if (double.TryParse(Console.ReadLine(), out operand2))
                     {
-                        result = operand1 * operand2;
-                    };
-                    break;
-                case "/": 
-                    if (double.TryParse(Console.ReadLine(), out operand2))
+                        //кака€ именно операци€?
+                        switch (operation)
+                        {
+                            case "+": result = operand1 + operand2; break;
+                            case "-": result = operand1 - operand2; break;
+                            case "*": result = operand1 * operand2; break;
+                            case "/": result = operand1 / operand2; break;
+                        };
+                    }
+                    else
                     {
-                        result = operand1 / operand2;
+                        Console.WriteLine("ќперанд должен быть числом!");
                     };
                     break;
-                case "sqrt":
-                    if (double.TryParse(Console.ReadLine(), out operand2))
-                    {
-                        result = Math.Sqrt(operand1) ;
-                    };
-                    break;
-                default: Console.WriteLine("Ќеверна€ операци€!"); result = 0;
-                    break;
+               
+            };
+            //операции с одним операндом
+            case "sqrt": result = Math.Sqrt(operand1); break;
+            //недопустимые операции
+            default: Console.WriteLine("Ќеверна€ операци€!"); Console.ReadKey(); return;
             };
             //выводим результат
             Console.WriteLine(operand1 + " " + operation + " " + operand2 + " = " + result);
-            }
+       }
             else
             {
-                Console.WriteLine("ќперанд должен быть числом!"); 
+              Console.WriteLine("ќперанд должен быть числом!");   
             };
     
         }
