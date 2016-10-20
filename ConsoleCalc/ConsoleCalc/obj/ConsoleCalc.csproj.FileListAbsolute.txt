@@ -1,0 +1,5 @@
+E:\меньщиков\repos_Menshicov\ConsoleCalc\ConsoleCalc\obj\Debug\ResolveAssemblyReference.cache
+E:\меньщиков\repos_Menshicov\ConsoleCalc\ConsoleCalc\bin\Debug\ConsoleCalc.exe
+E:\меньщиков\repos_Menshicov\ConsoleCalc\ConsoleCalc\bin\Debug\ConsoleCalc.pdb
+E:\меньщиков\repos_Menshicov\ConsoleCalc\ConsoleCalc\obj\Debug\ConsoleCalc.exe
+E:\меньщиков\repos_Menshicov\ConsoleCalc\ConsoleCalc\obj\Debug\ConsoleCalc.pdb
