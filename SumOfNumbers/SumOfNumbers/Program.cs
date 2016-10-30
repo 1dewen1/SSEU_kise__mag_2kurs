@@ -17,16 +17,16 @@ namespace SumOfNumbers
                 int i = 0; // счетчик количества введенных
                 int Sum = 0; // сумма чисел
                 // N раз
-                while (i < N)
+                do
                 {
                     Console.Write("Введите число:");
                     // если введено корректное число
                     if (int.TryParse(Console.ReadLine(), out x))
                     {
                         Sum += x; //добавить к сумме
-                        
+                        /* DEBUG INFO
                         Console.WriteLine("{" + Sum + "}");
-                        
+                        //*/
                         i++;
                     }
                     else
@@ -34,7 +34,8 @@ namespace SumOfNumbers
                         Console.WriteLine("Неверное значение! Введите целое значение!");
                     };
 
-                };
+                }
+                while (i < N);
                 // вывод результата
                 Console.WriteLine("Сумма: " + Sum);
                 Console.ReadKey();
