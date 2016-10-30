@@ -8,37 +8,42 @@ namespace SumOfNumbers
     {
         static void Main(string[] args)
         {
-            //количество чисел
+            // количество чисел
             int N;
             int x;
-            Console.Write("Введите количество чисел для суммирования: ");
+            Console.Write("Ввидите количество чисел для суммирования: ");
             if (int.TryParse(Console.ReadLine(), out N))
             {
-                int Sum = 0; //сумма чисел
-                //N раз
-                Console.Write("Введите число: ");
-                for (int i = 0; i < N; i++)
+                int i = 0; // счетчик количества введенных
+                int Sum = 0; // сумма чисел
+                // N раз
+                while (i < N)
                 {
-                    //если введено верное выражене
+                    Console.Write("Введите число:");
+                    // если введено корректное число
                     if (int.TryParse(Console.ReadLine(), out x))
                     {
                         Sum += x; //добавить к сумме
-                        /* DEBUG INFO
+                        
                         Console.WriteLine("{" + Sum + "}");
-                        //*/
+                        
+                        i++;
                     }
-                   else
-                   {
-                        Console.WriteLine("Неверное значение! Введите целое значение");
-                        i--;
-                   }
+                    else
+                    {
+                        Console.WriteLine("Неверное значение! Введите целое значение!");
+                    };
+
                 };
-                //вывод результата
+                // вывод результата
                 Console.WriteLine("Сумма: " + Sum);
-
-
+                Console.ReadKey();
             }
-            
+            else
+            {
+                Console.WriteLine("Неверное значение! Введите целое значение!");
+                Console.ReadKey();
+            };
         }
     }
 }
