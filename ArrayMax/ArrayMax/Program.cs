@@ -32,13 +32,17 @@ namespace ArrayMax
             };
             //поиск максимального значения
             int max = a[0];
-            int iMax = 0;
+            string iMax = "0";
             for (i = 1; i < a.Length; i++)
             {
-                if (a[i] > max)
+                if (a[i] == max)
+                {
+                    iMax = iMax + ", " + i;
+                }
+                else if (a[i] > max)
                 {
                     max = a[i];
-                    iMax = i;
+                    iMax = i.ToString();
                 };
             };
             //Вывод результата
