@@ -1,0 +1,5 @@
+C:\Users\Домашний\Desktop\repos\ArrayMax\ArrayMax\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Домашний\Desktop\repos\ArrayMax\ArrayMax\bin\Debug\ArrayMax.exe
+C:\Users\Домашний\Desktop\repos\ArrayMax\ArrayMax\bin\Debug\ArrayMax.pdb
+C:\Users\Домашний\Desktop\repos\ArrayMax\ArrayMax\obj\Debug\ArrayMax.exe
+C:\Users\Домашний\Desktop\repos\ArrayMax\ArrayMax\obj\Debug\ArrayMax.pdb
