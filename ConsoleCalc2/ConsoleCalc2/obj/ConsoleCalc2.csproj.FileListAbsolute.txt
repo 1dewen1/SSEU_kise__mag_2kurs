@@ -1,0 +1,5 @@
+C:\Users\Домашний\Desktop\repos\ConsoleCalc2\ConsoleCalc2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Домашний\Desktop\repos\ConsoleCalc2\ConsoleCalc2\bin\Debug\ConsoleCalc2.exe
+C:\Users\Домашний\Desktop\repos\ConsoleCalc2\ConsoleCalc2\bin\Debug\ConsoleCalc2.pdb
+C:\Users\Домашний\Desktop\repos\ConsoleCalc2\ConsoleCalc2\obj\Debug\ConsoleCalc2.exe
+C:\Users\Домашний\Desktop\repos\ConsoleCalc2\ConsoleCalc2\obj\Debug\ConsoleCalc2.pdb
