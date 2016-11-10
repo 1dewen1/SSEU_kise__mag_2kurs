@@ -1,0 +1,5 @@
+C:\Users\Домашний\Desktop\repos\SortArray\SortArray\obj\Debug\SortArray.exe
+C:\Users\Домашний\Desktop\repos\SortArray\SortArray\obj\Debug\SortArray.pdb
+C:\Users\Домашний\Desktop\repos\SortArray\SortArray\bin\Debug\SortArray.exe
+C:\Users\Домашний\Desktop\repos\SortArray\SortArray\bin\Debug\SortArray.pdb
+C:\Users\Домашний\Desktop\repos\SortArray\SortArray\obj\Debug\ResolveAssemblyReference.cache
