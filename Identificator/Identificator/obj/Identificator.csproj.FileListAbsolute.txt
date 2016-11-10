@@ -1,0 +1,5 @@
+C:\Users\Домашний\Desktop\repos\Identificator\Identificator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Домашний\Desktop\repos\Identificator\Identificator\bin\Debug\Identificator.exe
+C:\Users\Домашний\Desktop\repos\Identificator\Identificator\bin\Debug\Identificator.pdb
+C:\Users\Домашний\Desktop\repos\Identificator\Identificator\obj\Debug\Identificator.exe
+C:\Users\Домашний\Desktop\repos\Identificator\Identificator\obj\Debug\Identificator.pdb
