@@ -1,0 +1,5 @@
+C:\Users\Домашний\Desktop\repos\FIO\FIO\bin\Debug\FIO.exe
+C:\Users\Домашний\Desktop\repos\FIO\FIO\bin\Debug\FIO.pdb
+C:\Users\Домашний\Desktop\repos\FIO\FIO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Домашний\Desktop\repos\FIO\FIO\obj\Debug\FIO.exe
+C:\Users\Домашний\Desktop\repos\FIO\FIO\obj\Debug\FIO.pdb
