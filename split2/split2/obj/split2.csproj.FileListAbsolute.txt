@@ -1,0 +1,5 @@
+D:\rep\split2\split2\bin\Debug\split2.exe
+D:\rep\split2\split2\bin\Debug\split2.pdb
+D:\rep\split2\split2\obj\Debug\ResolveAssemblyReference.cache
+D:\rep\split2\split2\obj\Debug\split2.exe
+D:\rep\split2\split2\obj\Debug\split2.pdb
