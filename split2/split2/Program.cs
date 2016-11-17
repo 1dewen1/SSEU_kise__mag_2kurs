@@ -22,6 +22,7 @@ namespace split2
                 if (double.TryParse(numbersStrArr[i].Trim(), out numbersArr[i]))
                 {
                     n++;
+                    
                 };
             };
             //временный массив длинной n
