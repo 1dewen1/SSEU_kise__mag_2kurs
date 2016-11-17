@@ -1,0 +1,5 @@
+D:\rep\SortAZ\SortAZ\bin\Debug\SortAZ.exe
+D:\rep\SortAZ\SortAZ\bin\Debug\SortAZ.pdb
+D:\rep\SortAZ\SortAZ\obj\Debug\ResolveAssemblyReference.cache
+D:\rep\SortAZ\SortAZ\obj\Debug\SortAZ.exe
+D:\rep\SortAZ\SortAZ\obj\Debug\SortAZ.pdb
