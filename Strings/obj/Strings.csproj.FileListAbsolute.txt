@@ -1,0 +1,5 @@
+D:\repos\Strings\obj\Debug\ResolveAssemblyReference.cache
+D:\repos\Strings\bin\Debug\Strings.exe
+D:\repos\Strings\bin\Debug\Strings.pdb
+D:\repos\Strings\obj\Debug\Strings.exe
+D:\repos\Strings\obj\Debug\Strings.pdb
