@@ -1,0 +1,5 @@
+D:\repos\L2-Z4\L2-Z4\obj\Debug\ResolveAssemblyReference.cache
+D:\repos\L2-Z4\L2-Z4\bin\Debug\L2-Z4.exe
+D:\repos\L2-Z4\L2-Z4\bin\Debug\L2-Z4.pdb
+D:\repos\L2-Z4\L2-Z4\obj\Debug\L2-Z4.exe
+D:\repos\L2-Z4\L2-Z4\obj\Debug\L2-Z4.pdb
