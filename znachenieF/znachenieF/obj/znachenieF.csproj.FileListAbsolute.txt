@@ -1,7 +1,0 @@
-G:\меньщиков\SSEU_kise__mag_2kurs\znachenieF\znachenieF\obj\Debug\ResolveAssemblyReference.cache
-G:\меньщиков\SSEU_kise__mag_2kurs\znachenieF\znachenieF\bin\Debug\znachenieF.exe
-G:\меньщиков\SSEU_kise__mag_2kurs\znachenieF\znachenieF\bin\Debug\znachenieF.pdb
-G:\меньщиков\SSEU_kise__mag_2kurs\znachenieF\znachenieF\obj\Debug\znachenieF.exe
-G:\меньщиков\SSEU_kise__mag_2kurs\znachenieF\znachenieF\obj\Debug\znachenieF.pdb
-C:\Users\dewen\Desktop\github\znachenieF\znachenieF\obj\Debug\znachenieF.exe
-C:\Users\dewen\Desktop\github\znachenieF\znachenieF\obj\Debug\znachenieF.pdb
