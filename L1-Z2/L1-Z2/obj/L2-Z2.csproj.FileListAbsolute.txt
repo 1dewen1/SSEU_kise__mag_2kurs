@@ -1,0 +1,2 @@
+D:\repos\L1-Z2\L1-Z2\obj\Debug\L1-Z2.exe
+D:\repos\L1-Z2\L1-Z2\obj\Debug\L1-Z2.pdb
