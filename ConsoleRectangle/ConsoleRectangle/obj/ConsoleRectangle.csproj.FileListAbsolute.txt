@@ -1,0 +1,5 @@
+C:\Users\Домашний\Desktop\repos\ConsoleRectangle\ConsoleRectangle\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Домашний\Desktop\repos\ConsoleRectangle\ConsoleRectangle\bin\Debug\ConsoleRectangle.exe
+C:\Users\Домашний\Desktop\repos\ConsoleRectangle\ConsoleRectangle\bin\Debug\ConsoleRectangle.pdb
+C:\Users\Домашний\Desktop\repos\ConsoleRectangle\ConsoleRectangle\obj\Debug\ConsoleRectangle.exe
+C:\Users\Домашний\Desktop\repos\ConsoleRectangle\ConsoleRectangle\obj\Debug\ConsoleRectangle.pdb
