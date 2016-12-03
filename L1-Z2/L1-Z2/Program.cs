@@ -23,6 +23,7 @@ namespace L1_Z2
             double.TryParse(Console.ReadLine(), out c);
             //Вычисление f(x)
             double fun = (-1*x)/a*Math.Sqrt(Math.Pow(x, 2) + b*x + c);
+            //вывод значения функции f(x)
             Console.WriteLine("Значение функции = " + fun);
             
             
