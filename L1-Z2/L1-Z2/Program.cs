@@ -8,6 +8,7 @@ namespace L1_Z2
     {
         static void Main(string[] args)
         {
+            // объявление переменных
             double x;
             double a;
             double b;
@@ -20,6 +21,7 @@ namespace L1_Z2
             double.TryParse(Console.ReadLine(), out b);
             Console.WriteLine("Введите год рождения");
             double.TryParse(Console.ReadLine(), out c);
+            //Вычисление f(x)
             double fun = (-1*x)/a*Math.Sqrt(Math.Pow(x, 2) + b*x + c);
             Console.WriteLine("Значение функции = " + fun);
             
