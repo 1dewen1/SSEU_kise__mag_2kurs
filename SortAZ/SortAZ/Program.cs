@@ -23,8 +23,6 @@ namespace SortAZ
             Console.WriteLine("Сортировка по алфавиту");
             Console.WriteLine(words);
 
-
-
             Console.ReadKey();
         }
     }
