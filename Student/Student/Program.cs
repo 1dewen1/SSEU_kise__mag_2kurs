@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace Student
+namespace student
 {
     static class Program
     {
@@ -14,7 +14,7 @@ namespace Student
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormStudent());
         }
     }
 }
