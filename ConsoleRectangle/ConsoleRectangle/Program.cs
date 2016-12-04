@@ -39,6 +39,28 @@ namespace ConsoleRectangle
                 //ширина и высота
                 return Width() * Height();
             }
+            //квадрат
+            public bool IsSquare()
+            {
+                //ширина = высота?
+                return Width() == Height();
+            }
+            //перемещение
+            public void Move(double x, double y)
+            {
+                x1 += x; x2 += x;
+                y1 += y; y2 += y;
+            }
+            //изменить ширину
+            public void SetWidth(double newWidth)
+            {
+                x2 = x1 + newWidth;
+            }
+            //изменить высоту
+            public void SetHeigtht(double newHeigtht)
+            {
+                y2 = y1 + newHeigtht;
+            }
         
         }
 
@@ -68,6 +90,7 @@ namespace ConsoleRectangle
             do
             {
                 Console.Clear(); //очистка окна
+                Console.WriteLine("\t\t\tПРЯМОУГОЛЬНИК");
                 //вывод координат
                 Console.WriteLine("Верхний левый угол: x =" + r.x1 + ", y = " + r.y1);
                 Console.WriteLine("Нижний правый угол: x =" + r.x2 + ", y = " + r.y2);
@@ -77,8 +100,48 @@ namespace ConsoleRectangle
                 //вывод периметра и площади
                 Console.WriteLine("Периметр = " + r.P());
                 Console.WriteLine("Периметр = " + r.S());
+                //меню
+                Console.WriteLine("\t\t\t╔═══════════════════════════════╗");
+                Console.WriteLine("\t\t\t║          МЕНЮ                 ║");
+                Console.WriteLine("\t\t\t║ a - является ли квадратом?    ║");
+                Console.WriteLine("\t\t\t║ b - переместить               ║");
+                Console.WriteLine("\t\t\t║ c - изменить ширину           ║");
+                Console.WriteLine("\t\t\t║ d - изменить высоту           ║");
+                Console.WriteLine("\t\t\t║  ESC - выход                  ║");
+                Console.WriteLine("\t\t\t╚═══════════════════════════════╝");
                 //нажатие клавиши
                 key = Console.ReadKey().KeyChar;
+                //проверка нажатой клавиши
+                switch (key)
+                {
+                    case 'a':
+                        Console.Clear();
+                        if (r.IsSquare())
+                            Console.WriteLine("Квадрат (" + r.Width() + " = " + r.Height() + ")");
+                        else
+                            Console.WriteLine("Не квадрат (" + r.Width() + " != " + r.Height() + ")");
+                        Console.WriteLine("Нажмите любую клавишу");
+                        Console.ReadKey();
+                        break;
+                    case 'b'://перемещение
+                        Console.Clear();
+                        r.Move(ReadCoord(" по x"), ReadCoord(" по y"));
+                        Console.ReadKey();
+                        break;
+                    case 'c': //изменить ширину
+                        Console.Clear();
+                        Console.WriteLine("Какую установить ширину?");
+                        r.SetWidth(ReadCoord(""));
+                        Console.WriteLine("Нажмите любую клавишу");
+                        break;
+                    case 'd'://изменить высоту
+                        Console.Clear();
+                        Console.WriteLine("Какую установить высоту?");
+                        r.SetHeigtht(ReadCoord(""));
+                        Console.ReadKey();
+                        break;
+                };
+
             }
             while (key != (char)27); //пока не нажат Esc
             
