@@ -424,7 +424,14 @@ namespace student
             };
         }
 
-
+        public void PerevestiNaSledKurs_Click(object sender, EventArgs e)
+        {
+            //выполнить перевод
+            student1.PerevestiNaSledKurs();
+            //вывести на форму
+            numericUpDownKurs.Value = student1.kurs;
+            textBoxStudentInfo.Text = student1.ToString();
+        }
 
     }
 }

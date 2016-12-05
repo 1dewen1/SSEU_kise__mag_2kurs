@@ -57,6 +57,7 @@ namespace student
             this.checkBoxEkz3neyavka = new System.Windows.Forms.CheckBox();
             this.checkBoxEkz4neyavka = new System.Windows.Forms.CheckBox();
             this.checkBoxEkz5neyavka = new System.Windows.Forms.CheckBox();
+            this.PerevestiNaSledKurs = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKurs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEkz1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEkz2)).BeginInit();
@@ -415,11 +416,22 @@ namespace student
             this.checkBoxEkz5neyavka.UseVisualStyleBackColor = true;
             this.checkBoxEkz5neyavka.CheckedChanged += new System.EventHandler(this.checkBoxEkz5neyavka_CheckedChanged);
             // 
+            // PerevestiNaSledKurs
+            // 
+            this.PerevestiNaSledKurs.Location = new System.Drawing.Point(12, 573);
+            this.PerevestiNaSledKurs.Name = "PerevestiNaSledKurs";
+            this.PerevestiNaSledKurs.Size = new System.Drawing.Size(118, 34);
+            this.PerevestiNaSledKurs.TabIndex = 19;
+            this.PerevestiNaSledKurs.Text = "Перевести на следующий курс";
+            this.PerevestiNaSledKurs.UseVisualStyleBackColor = true;
+            this.PerevestiNaSledKurs.Click += new System.EventHandler(this.PerevestiNaSledKurs_Click);
+            // 
             // FormStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 619);
+            this.Controls.Add(this.PerevestiNaSledKurs);
             this.Controls.Add(this.groupBoxOzenki);
             this.Controls.Add(this.textBoxStudentInfo);
             this.Controls.Add(this.labelBudget);
@@ -479,6 +491,7 @@ namespace student
         private System.Windows.Forms.CheckBox checkBoxEkz3neyavka;
         private System.Windows.Forms.CheckBox checkBoxEkz2neyavka;
         private System.Windows.Forms.CheckBox checkBoxEkz1neyavka;
+        private System.Windows.Forms.Button PerevestiNaSledKurs;
     }
 }
 
