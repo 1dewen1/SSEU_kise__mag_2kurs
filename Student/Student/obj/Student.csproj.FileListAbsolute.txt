@@ -14,3 +14,11 @@ C:\Users\dewen\Desktop\github\Student\Student\obj\Debug\ResolveAssemblyReference
 C:\Users\dewen\Desktop\github\Student\Student\obj\Debug\student.FormStudent.resources
 C:\Users\dewen\Desktop\github\Student\Student\obj\Debug\student.Properties.Resources.resources
 C:\Users\dewen\Desktop\github\Student\Student\obj\Debug\Student.csproj.GenerateResource.Cache
+D:\SSEU_kise__mag_2kurs\Student\Student\obj\Debug\Student.exe
+D:\SSEU_kise__mag_2kurs\Student\Student\obj\Debug\Student.pdb
+D:\SSEU_kise__mag_2kurs\Student\Student\bin\Debug\Student.exe
+D:\SSEU_kise__mag_2kurs\Student\Student\bin\Debug\Student.pdb
+D:\SSEU_kise__mag_2kurs\Student\Student\obj\Debug\ResolveAssemblyReference.cache
+D:\SSEU_kise__mag_2kurs\Student\Student\obj\Debug\student.FormStudent.resources
+D:\SSEU_kise__mag_2kurs\Student\Student\obj\Debug\student.Properties.Resources.resources
+D:\SSEU_kise__mag_2kurs\Student\Student\obj\Debug\Student.csproj.GenerateResource.Cache

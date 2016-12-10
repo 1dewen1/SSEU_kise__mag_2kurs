@@ -39,7 +39,6 @@ namespace student
                    "№ студбилета: " + Nstud + "\r\n" +
                    "Курс: " + kurs + "\r\n" +
                    "Группа: " + gruppa + "\r\n" +
-                   (budget ? "На бюджетной основе" : "На коммерческой основе") + "\r\n" +
                     strOzenki + "\r\n" +
                     "Средний балл: " + SredniyBall();
         }
@@ -110,6 +109,83 @@ namespace student
             return 0; //недопустимый семестр - нет стипендии
         }
 
+        //созданите нового студента путем копирования полей из другого
+        student(student copyFrom)
+        {
+            //копируем значения всех полей
+            FIO = copyFrom.FIO;
+            Nstud = copyFrom.Nstud;
+            kurs = copyFrom.kurs;
+            gruppa = copyFrom.gruppa;
+            ozenki = copyFrom.ozenki;
+        }
 
+        
     }
+
+    class StudentPlat : student
+        {
+            public decimal stoimostObucheniya; //стоимость обучения за семестр
+            public decimal oplacheno; //сколько оплатил студент в сумме
+
+            //оплатить обучение
+            public void OplatitObuchenie(decimal sum)
+            {
+                //долг снижается на указанную сумму
+                oplacheno += sum;
+            }
+
+            // задолжность за обучение (или переплата, если отрицательное)
+            public decimal Dolg()
+            {
+                //долг = стоимость обучения за семестр * количество семестров - оплаченная сумма
+                return stoimostObuchenya * kurs *2 - oplacheno;
+            }
+
+            //скопировать
+            public StudentPlat(student copyFrom) : base(copyFromFrom)
+            {
+                //если студент copyFrom является платником
+                if (copyFrom is StudentPlat)
+                {
+                    //то скопировать стоимость обучения и сумму долга,
+                    //рассматривая copyFrom как платника
+                    stoimostObucheniya = (copyFrom as StudentPlat).stoimostObucheniya;
+                    oplacheno = (copyFrom as StudentBudgplat).oplacheno;
+                };
+            }
+        }
+
+    class StudentBudg : student
+        {
+            //определить стипендию за указанный семестр
+            const decimal stopSum = 1500m; //сумма за указанный семестр 
+            const decimal stipPovyshSum = 1800m //сумма обычной стипендии
+            public decimal Stipendia(int semestr)
+            {
+                //если семестр не выходит за допустимые границы
+                if ((semestr >= 0) && (semestr <= 2 * kurs))
+                {
+                    bool strip = true; // есть стипендия 
+                    bool stripPovysh = true; // есть повышенная стипендия
+                    int n = 0 //количество экзаменов
+                    for (int i = 0; i < 5; i++) // количество экзаменов
+                    {
+                        if (ozenki[semestr, i] > 0) //если экзамен был
+                        {
+                            n++;  // увеличить количество экзаменов
+                            strip &= (ozenki[semestr, i] > 3); // обычная стипендия - оценка выше 3
+                            stripPovysh &= (ozenki[semestr, i] == 5); //повышенная - оценка 5
+                        };
+                    if (n == 0) //не было экзаменов
+                        return 0; //еще нет стипендии
+                    if (stipPovyshSum) //есть повышенная стипендия
+                        return stipSum;
+                    else 
+                        return 0;
+                    };
+                return 0; //недопустимый семестр - нет стипендии
+                }
+            }
+        }
 }
