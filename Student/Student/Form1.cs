@@ -56,7 +56,28 @@ namespace student
 
         private void radioButtonBudget_CheckedChanged(object sender, EventArgs e)
         {
-            student1.budget = radioButtonBudget.Checked; //сохрнить бюджет/коммерческое
+            //если выбрано обучение на бюджете
+            if (radioButtonBudget.Checked)
+            {
+                //то создать бюджетника
+                student1 = new StudentBudg(student1);
+                //скрыть элементы для платников
+                labelStoimost.Visible = false;
+                numericUpDownSum.Visible = false;
+                numericUpDownStoimost.Visible = false;
+                buttonOplatit.Visible = false;
+            }
+            //иначе - обучение на коммерческой основе
+            else
+            {
+                //создать платника
+                student1 = new StudentPlat(student1);
+                //отобразить элементы для платников
+                labelStoimost.Visible = true;
+                numericUpDownSum.Visible = true;
+                numericUpDownStoimost.Visible = true;
+                buttonOplatit.Visible = true;
+            }
             textBoxStudentInfo.Text = student1.ToString(); //вывести на экран
         }
 
@@ -432,6 +453,29 @@ namespace student
             numericUpDownKurs.Value = student1.kurs;
             textBoxStudentInfo.Text = student1.ToString();
         }
+
+        private void numericUpDownStoimost_ValueChanged(object sender, EventArgs e)
+        {
+            //проверка - если студент - платник
+            if (student1 is StudentPlat)
+            {
+                //то установить стоимомть обучения
+                (student1 as StudentPlat).stoimostObucheniya = numericUpDownSum.Value;
+                textBoxStudentInfo.Text = student1.ToString(); //вывести на экран
+            }
+        }
+
+        private void buttonOplatit_Click(object sender, EventArgs e)
+        {
+            //проверка - если студент - платник
+            if (student1 is StudentPlat)
+            {
+                //то установить стоимомть обучения
+                (student1 as StudentPlat).stoimostObucheniya = numericUpDownSum.Value;
+                textBoxStudentInfo.Text = student1.ToString(); //вывести на экран
+            }
+        }
+
 
     }
 }

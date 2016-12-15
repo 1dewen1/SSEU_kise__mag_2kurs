@@ -15,7 +15,7 @@ namespace student
 
 
         //содержимое полей в виде текста
-        public string ToString()
+        public override string ToString()
         {
             //строка с оценками
             string strOzenki = "";
@@ -109,6 +109,9 @@ namespace student
             return 0; //недопустимый семестр - нет стипендии
         }
 
+        //конструктор по умолчанию
+        public student() { }
+        
         //созданите нового студента путем копирования полей из другого
         student(student copyFrom)
         {
@@ -119,8 +122,7 @@ namespace student
             gruppa = copyFrom.gruppa;
             ozenki = copyFrom.ozenki;
         }
-
-        
+  
     }
 
     class StudentPlat : student
@@ -138,12 +140,12 @@ namespace student
             // задолжность за обучение (или переплата, если отрицательное)
             public decimal Dolg()
             {
-                //долг = стоимость обучения за семестр * количество семестров - оплаченная сумма
-                return stoimostObuchenya * kurs *2 - oplacheno;
+                    //долг = стоимость обучения за семестр * количество семестров - оплаченная сумма
+                    return stoimostObucheniya * kurs * 2 - oplacheno;
             }
 
             //скопировать
-            public StudentPlat(student copyFrom) : base(copyFromFrom)
+            public StudentPlat(student copyFrom) : base(copyFrom)
             {
                 //если студент copyFrom является платником
                 if (copyFrom is StudentPlat)
@@ -151,41 +153,71 @@ namespace student
                     //то скопировать стоимость обучения и сумму долга,
                     //рассматривая copyFrom как платника
                     stoimostObucheniya = (copyFrom as StudentPlat).stoimostObucheniya;
-                    oplacheno = (copyFrom as StudentBudgplat).oplacheno;
+                    oplacheno = (copyFrom as StudentPlat).oplacheno;
                 };
             }
+            
+            //вывод информация о студенте-платнике
+            public string ToString()
+            {
+                //собираем результат из 
+                return base.ToString() + "\r\n" //метода класса-предка (Student),
+                   + "Обучение на платной основе\r\n" //записи о платном обучении
+                   + "Стоимость обучения: " + stoimostObucheniya + " руб.\r\n"
+                   + "Задолженность: " + Dolg() + " руб."; //и стипендии
         }
+            
+    
+            }
+        
+           
+
 
     class StudentBudg : student
         {
+        public StudentBudg(student copyFrom) : base(copyFrom) { }
+
             //определить стипендию за указанный семестр
-            const decimal stopSum = 1500m; //сумма за указанный семестр 
-            const decimal stipPovyshSum = 1800m //сумма обычной стипендии
+            const decimal stipSum = 1500m; //сумма за указанный семестр 
+            const decimal stipPovyshSum = 1800m;//сумма обычной стипендии
             public decimal Stipendia(int semestr)
             {
                 //если семестр не выходит за допустимые границы
                 if ((semestr >= 0) && (semestr <= 2 * kurs))
                 {
-                    bool strip = true; // есть стипендия 
-                    bool stripPovysh = true; // есть повышенная стипендия
-                    int n = 0 //количество экзаменов
+                    bool stip = true; // есть стипендия 
+                    bool stipPovysh = true; // есть повышенная стипендия
+                    int n = 0;//количество экзаменов
                     for (int i = 0; i < 5; i++) // количество экзаменов
                     {
                         if (ozenki[semestr, i] > 0) //если экзамен был
                         {
                             n++;  // увеличить количество экзаменов
-                            strip &= (ozenki[semestr, i] > 3); // обычная стипендия - оценка выше 3
-                            stripPovysh &= (ozenki[semestr, i] == 5); //повышенная - оценка 5
+                            stip &= (ozenki[semestr, i] > 3); // обычная стипендия - оценка выше 3
+                            stipPovysh &= (ozenki[semestr, i] == 5); //повышенная - оценка 5
                         };
                     if (n == 0) //не было экзаменов
                         return 0; //еще нет стипендии
-                    if (stipPovyshSum) //есть повышенная стипендия
+                    if (stipPovysh) //есть повышенная стипендия
                         return stipSum;
                     else 
                         return 0;
                     };
                 return 0; //недопустимый семестр - нет стипендии
                 }
+            }
+            
+            //вывод информации о студенте-бюджетнике
+            public override string ToString()
+            {
+                //формируем записи о стипендии за каждый семестр
+                string stipendia = "Стипендия:\r\n";
+                for (int i = 0; i < 2 * kurs; i++)
+                    stipendia += i + " стипендия: " + Stipendia(i) + "руб.\r\n";
+                //собираем результат из
+                return base.ToString() + "\r\n" //метода класса-предка (Student),
+                       + "Обучение на бюджетной основе\r\n" //записи о бюджетном обучении
+                       + stipendia; //и стипендии
             }
         }
 }
