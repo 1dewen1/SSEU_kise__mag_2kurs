@@ -1,0 +1,5 @@
+C:\Users\dewen\Desktop\github\L3-Z3\L3-Z3\bin\Debug\L3-Z3.exe
+C:\Users\dewen\Desktop\github\L3-Z3\L3-Z3\bin\Debug\L3-Z3.pdb
+C:\Users\dewen\Desktop\github\L3-Z3\L3-Z3\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dewen\Desktop\github\L3-Z3\L3-Z3\obj\Debug\L3-Z3.exe
+C:\Users\dewen\Desktop\github\L3-Z3\L3-Z3\obj\Debug\L3-Z3.pdb
